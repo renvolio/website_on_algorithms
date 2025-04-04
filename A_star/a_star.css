@@ -1,6 +1,7 @@
 body {
     font-family: Verdana, sans-serif;
-    background-color: #a8e3c1;
+    background: rgb(48,144,226);
+    background: radial-gradient(circle, rgba(48,144,226,1) 0%, rgba(95,119,225,1) 49%, rgba(168,44,224,1) 100%);
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,6 +12,7 @@ body {
 }
 
 .name {
+    color: rgb(255, 255, 255);
     font-size: 22px;
     padding: 10px 20px;
 }
@@ -42,8 +44,8 @@ canvas {
 }
 
 button {
-    background-color: deeppink;
-    color: white;
+    background-color: #285d95;
+    color: #ffffff;
     border: none;
     padding: 15px 30px;
     margin: 10px;
@@ -85,3 +87,4 @@ a:hover {
         flex-direction: column;
     }
 }
+

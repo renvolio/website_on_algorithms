@@ -48,8 +48,8 @@ function generateMaze(){
 
 }
 
-const borderColor = '#100c0c';
-const fillColor = '#f0f0f0';
+const borderColor = '#000000';
+const fillColor = '#ffffff';
 function drawGrid() {
     for (let row = 0; row < rows; row++) {
         for (let col = 0; col < cols; col++) {
@@ -195,6 +195,19 @@ function drowPath(Path){
 
 document.getElementById('findPath').addEventListener('click', function () {
     findPath();
+});
+canvas.addEventListener('click',function (event){
+    const x = Math.floor(event.offsetX / cellWidth);
+    const y = Math.floor(event.offsetY / cellHeight);
+
+    if(maze[y][x] === 1){
+        maze[y][x] = 0;
+    }
+    else {
+        maze[y][x] = 1;
+    }
+
+    drawGrid();
 });
 
 
