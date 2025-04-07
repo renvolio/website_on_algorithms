@@ -10,9 +10,9 @@ canvas.onmousedown = function (event) {
     canvas.onmousemove = function (event) {
         var x = event.offsetX
         var y = event.offsetY
+        let cellsize = 50;
 
-
-        ctx.fillRect(x-5,y-5,5,5);
+        ctx.fillRect(x-cellsize / 2,y-cellsize / 2,cellsize,cellsize);
         //ctx.stroke();
 
 
